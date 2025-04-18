@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5280 Apex Badminton Club</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #1a3c34;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4a261;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+
+        #home {
+            background: url('https://images.unsplash.com/photo-1593001790666-26f8c6e60f7f') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            margin-top: 0;
+        }
+
+        #home h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        #home p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background: #f4a261;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #e76f51;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        #about, #membership, #events, #contact {
+            background: #f9f9f9;
+            margin: 20px 0;
+            border-radius: 10px;
+            padding: 60px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            background: #f4a261;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #e76f51;
+        }
+
+        footer {
+            background: #1a3c34;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            #home h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">5280 Apex Badminton Club</div>
+            <ul>
+                <li><a href="home.jpg">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to 5280 Apex Badminton Club</h1>
+        <p>Join our vibrant community of badminton enthusiasts in Denver! Play, learn, and compete with us.</p>
+        <a href="#membership" class="btn">Become a Member</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>The 5280 Apex Badminton Club is dedicated to promoting badminton in the Denver area. Founded in 2020, we provide a welcoming environment for players of all skill levels, from beginners to competitive athletes. Our state-of-the-art facilities and experienced coaches ensure you have the best experience on and off the court.</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Community</h3>
+                <p>Join a tight-knit group of players who share your passion for badminton.</p>
+            </div>
+            <div class="card">
+                <h3>Training</h3>
+                <p>Access professional coaching to improve your skills and strategy.</p>
+            </div>
+            <div class="card">
+                <h3>Tournaments</h3>
+                <p>Compete in local and regional tournaments to test your abilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="membership">
+        <h2>Membership</h2>
+        <p>Become a member and enjoy unlimited access to our courts, exclusive events, and coaching sessions. We offer flexible plans to suit your needs.</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Basic Plan</h3>
+                <p>$20/month</p>
+                <p>Access to courts during open play hours.</p>
+                <a href="#contact" class="btn">Join Now</a>
+            </div>
+            <div class="card">
+                <h3>Pro Plan</h3>
+                <p>$50/month</p>
+                <p>Unlimited court access + 2 coaching sessions/month.</p>
+                <a href="#contact" class="btn">Join Now</a>
+            </div>
+            <div class="card">
+                <h3>Elite Plan</h3>
+                <p>$80/month</p>
+                <p>Unlimited access, weekly coaching, and tournament entry.</p>
+                <a href="#contact" class="btn">Join Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <p>Stay updated on our tournaments, social nights, and training camps.</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Spring Smash 2025</h3>
+                <p>Date: May 10, 2025</p>
+                <p>Join our annual tournament for all skill levels!</p>
+            </div>
+            <div class="card">
+                <h3>Beginner Workshop</h3>
+                <p>Date: June 15, 2025</p>
+                <p>Learn the basics with our expert coaches.</p>
+            </div>
+            <div class="card">
+                <h3>Social Night</h3>
+                <p>Date: July 20, 2025</p>
+                <p>Meet fellow players and enjoy casual games.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to join? Reach out to us!</p>
+        <form id="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 5280 Apex Badminton Club. All rights reserved.</p>
+        <p>1234 Denver St, Denver, CO | info@5280apexbadminton.com | (303) 555-1234</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission (basic example)
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
